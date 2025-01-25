@@ -7,8 +7,8 @@
 // Daten über die Arbeit
 #let title = "Titel der Studienarbeit"
 #let studiengang = "technische Informatik" // Name des Studiengangs (Informatik)
-#let dualer_supervisor = "Dualer Betreuere" // Betreuere in der dualen Firma
-#let dhbw_supervisor = "DHBW Betreuere" //Betreuer von der DHBW
+#let dualer_supervisor = "Dualer Betreuer" // Betreuere in der dualen Firma
+#let dhbw_supervisor = "DHBW Betreuer" //Betreuer von der DHBW
 
 // Die Zeit in Wochen wird automatisch berechnet und eingefügt.
 #let startDate = datetime(day: 1, month: 1, year: 2024) // Start der Arbeit
