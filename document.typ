@@ -1,4 +1,7 @@
 #import "layout/titlepage.typ": *
+#import "layout/erklaerung.typ": *
+#import "layout/sperrvermerk.typ": *
+#import "layout/inhaltsverzeichnis.typ": *
 #import "metadata.typ": *
 #titlepage(
   title: title,
@@ -6,12 +9,29 @@
   author: author,
   matrikel_nummer: matrikel_nummer,
   kurs: kurs,
-  supervisor: "Super visor",
   studiengang: studiengang,
   dhbw: dhbw_karlsruhe,
   startDate: startDate,
   submissionDate: submissionDate,
   dualer_partner: dualer_partner,
-  dhbw_supervisor: dualer_supervisor,
+  dhbw_supervisor: dhbw_supervisor,
 )
+#pagebreak()
 
+#erklaerung(
+  title: title,
+  project_type: "Projekt",
+)
+#align(bottom)[
+  #sperrvermerk()
+]
+#pagebreak()
+#toc()
+#pagebreak()
+
+#set heading(numbering: "1.1.1")
+#set page(numbering: "1")
+#counter(page).update(1)
+= Heading
+== Another Heading
+=== Third Subheading

@@ -2,17 +2,17 @@
 #let author = "Jakob Fassunge"
 #let matrikel_nummer = 999999
 #let kurs = "TInfB06"
-#let dualer_partner = "esentri AG"
-// Enter your thesis data here:
-#let title = "Titel der Studienarbeit"
-#let studiengang = "Informatik"
-#let dualer_supervisor = ""
-#let dhbw_supervisor = "Marc Auberer, B. Sc."
+#let dualer_partner = "esentri AG, Ettling"
 
-#let startDate = datetime(day: 1, month: 1, year: 2024)
-#let submissionDate = datetime(day: 1, month: 1, year: 2025)
-#let presentationDate = datetime(day: 1, month: 1, year: 2024)
-#let feedbacklogSubmissionDate = datetime(day: 1, month: 1, year: 2024)
+// Daten über die Arbeit
+#let title = "Titel der Studienarbeit"
+#let studiengang = "technische Informatik" // Name des Studiengangs (Informatik)
+#let dualer_supervisor = "" // Betreuere in der dualen Firma
+#let dhbw_supervisor = "Marc Auberer, B. Sc." //Betreuer von der DHBW
+
+// Die Zeit in Wochen wird automatisch berechnet und eingefügt.
+#let startDate = datetime(day: 1, month: 1, year: 2024) // Start der Arbeit
+#let submissionDate = datetime(day: 1, month: 1, year: 2025) // Abgabe Termin
 
 // Variablen für das Dokument
 

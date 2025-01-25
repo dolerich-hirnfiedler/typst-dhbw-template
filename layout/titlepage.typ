@@ -5,9 +5,7 @@
   author: "",
   matrikel_nummer: "",
   kurs: "",
-  supervisor: "",
   dhbw: "Duale Hochschule Baden-Württemberg",
-  advisors: (),
   startDate: datetime,
   submissionDate: datetime,
   firmen_logo: "",
@@ -65,17 +63,22 @@
   )
 
   let content = (
-    [Bearbeitungszeitraum, #calc.floor(delta_time.weeks()) + " Wochen"],
-    [Matrikelnummer, #matrikel_nummer, Kurs, #kurs],
-    [Dualer Partner, #dualer_partner],
+    [Bearbeitungszeitraum],
+    [ #calc.floor(delta_time.weeks()) Wochen],
+    [Matrikelnummer, Kurs],
+    [#matrikel_nummer, #kurs],
+    [Dualer Partner],
+    [#dualer_partner],
   )
 
   // Conditionally append a row if dualer_supervisor is provided and not empty
   if dualer_supervisor != "" {
-    content += [Beträuer*In des Dualen Partners, #dualer_supervisor]
+    content.push([Beträuer*In des Dualen Partners])
+    content.push([ #dualer_supervisor])
   }
   if dhbw_supervisor != "" {
-    content += [Beträuer*In der DHBW, #dhbw_supervisor]
+    content.push([Beträuer*In der DHBW])
+    content.push([#dhbw_supervisor])
   }
 
   align(
@@ -84,7 +87,7 @@
       stroke: none,
       columns: (auto, auto),
       column-gutter: 10em,
-      content: content,
+      ..content,
     ),
   )
 }
