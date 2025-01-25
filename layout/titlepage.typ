@@ -12,6 +12,8 @@
   submissionDate: datetime,
   firmen_logo: "",
   dualer_partner: "",
+  dualer_supervisor: "",
+  dhbw_supervisor: "",
 ) = {
   let delta_time = submissionDate - startDate
   set page(
@@ -61,16 +63,28 @@
     center,
     text(1.5em, weight: 100, submissionDate.display("[day].[month].[year]")),
   )
+
+  let content = (
+    [Bearbeitungszeitraum, #calc.floor(delta_time.weeks()) + " Wochen"],
+    [Matrikelnummer, #matrikel_nummer, Kurs, #kurs],
+    [Dualer Partner, #dualer_partner],
+  )
+
+  // Conditionally append a row if dualer_supervisor is provided and not empty
+  if dualer_supervisor != "" {
+    content += [Beträuer*In des Dualen Partners, #dualer_supervisor]
+  }
+  if dhbw_supervisor != "" {
+    content += [Beträuer*In der DHBW, #dhbw_supervisor]
+  }
+
   align(
     bottom,
     table(
       stroke: none,
       columns: (auto, auto),
       column-gutter: 10em,
-      // alignment: (left, right),
-      [Bearbeitungszeitraum], [#calc.floor(delta_time.weeks()) Wochen ],
-      [Matrikelnummer, Kurs], [#matrikel_nummer, #kurs],
-      [Dualer Partner], [#dualer_partner],
+      content: content,
     ),
   )
 }

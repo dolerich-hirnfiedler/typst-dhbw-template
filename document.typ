@@ -9,9 +9,9 @@
   supervisor: "Super visor",
   studiengang: studiengang,
   dhbw: dhbw_karlsruhe,
-  advisors: advisors,
   startDate: startDate,
   submissionDate: submissionDate,
   dualer_partner: dualer_partner,
+  dhbw_supervisor: dualer_supervisor,
 )
 

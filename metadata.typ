@@ -5,10 +5,9 @@
 #let dualer_partner = "esentri AG"
 // Enter your thesis data here:
 #let title = "Titel der Studienarbeit"
-#let degree = "Studienarbeit" // Programm siehe in den
 #let studiengang = "Informatik"
-#let supervisor = "Prof. Dr. Stephan Krusche"
-#let advisors = ("Marc Auberer ",)
+#let dualer_supervisor = ""
+#let dhbw_supervisor = "Marc Auberer, B. Sc."
 
 #let startDate = datetime(day: 1, month: 1, year: 2024)
 #let submissionDate = datetime(day: 1, month: 1, year: 2025)
