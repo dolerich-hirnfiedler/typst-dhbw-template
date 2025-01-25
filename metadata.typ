@@ -1,13 +1,29 @@
+// Persönliche Daten
+#let author = "Jakob Fassunge"
+#let matrikel_nummer = 999999
+#let kurs = "TInfB06"
+#let dualer_partner = "esentri AG"
 // Enter your thesis data here:
-#let titleEnglish = "(Title English)"
-#let titleGerman = "(Title German)"
-#let degree = "Bachelor"
-#let program = "Information Systems"
+#let title = "Titel der Studienarbeit"
+#let degree = "Studienarbeit" // Programm siehe in den
+#let studiengang = "Informatik"
 #let supervisor = "Prof. Dr. Stephan Krusche"
-#let advisors = ("Jolanda Krümelmonster, M.Sc.",)
-#let author = "(Author)"
-#let birthdate = datetime(day: 01, month: 01, year: 2002) // only necessary for registration certificate
+#let advisors = ("Marc Auberer ",)
+
 #let startDate = datetime(day: 1, month: 1, year: 2024)
-#let submissionDate = datetime(day: 1, month: 1, year: 2024)
+#let submissionDate = datetime(day: 1, month: 1, year: 2025)
 #let presentationDate = datetime(day: 1, month: 1, year: 2024)
 #let feedbacklogSubmissionDate = datetime(day: 1, month: 1, year: 2024)
+
+// Variablen für das Dokument
+
+#let degree_bachelor = "Bachelor Arbeit"
+#let degree_master = "Master Arbeit"
+#let degree_t100 = "T-1000"
+#let degree_t200 = "T-2000"
+#let degree_t300 = "T-3000"
+
+#let dhbw_karlsruhe = [Duale Hochschule Baden#sym.hyph.nobreak;Württemberg Karlsruhe]
+#let dhbw_mannheim = [Duale Hochschule Baden#sym.hyph.nobreak;Württemberg Mannheim]
+#let dhbw_mosbach = [Duale Hochschule Baden#sym.hyph.nobreak;Württemberg Mosbach]
+#let dhbw_stuttgart = [Duale Hochschule BadenW#sym.hyph.nobreak;ürttemberg Stuttgart]
