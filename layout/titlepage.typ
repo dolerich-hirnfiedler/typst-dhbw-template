@@ -73,11 +73,11 @@
 
   // Conditionally append a row if dualer_supervisor is provided and not empty
   if dualer_supervisor != "" {
-    content.push([Beträuer*In des Dualen Partners])
+    content.push([Betreuer*In des Dualen Partners])
     content.push([ #dualer_supervisor])
   }
   if dhbw_supervisor != "" {
-    content.push([Beträuer*In der DHBW])
+    content.push([Betreuer*In der DHBW])
     content.push([#dhbw_supervisor])
   }
 
