@@ -8,7 +8,7 @@
   dhbw: "Duale Hochschule Baden-Württemberg",
   startDate: datetime,
   submissionDate: datetime,
-  firmen_logo: "",
+  firmen_logo_path: "",
   dualer_partner: "",
   dualer_supervisor: "",
   dhbw_supervisor: "",
@@ -27,16 +27,18 @@
 
   //Title Page
 
+
   grid(
     columns: (auto, auto),
+    rows:(70pt),
     align: (left, right),
     column-gutter: 2fr,
-    if firmen_logo != "" {
-      image(firmen_logo, width: 60%)
+    if firmen_logo_path != "" {
+      image(firmen_logo_path)
     } else {
       []
     },
-    image("/assets/dhbw_logo.svg", width: 60%),
+    image("/assets/dhbw_logo.svg"),
   )
   v(10mm)
   align(center, text(2em, weight: 700, title))

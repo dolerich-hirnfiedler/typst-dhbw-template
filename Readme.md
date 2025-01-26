@@ -23,6 +23,7 @@ Metadaten können in der Datei `metadata.typ` eingetragen werden. Dort sind bere
 #let studiengang = "technische Informatik" // Name des Studiengangs (Informatik)
 #let dualer_supervisor = "Dualer Betreuer" // Betreuere in der dualen Firma
 #let dhbw_supervisor = "DHBW Betreuer" //Betreuer von der DHBW
+#let firmen_logo = "" // Hier den Pfad zum Firmenlogo angeben 
 
 // Die Zeit in Wochen wird automatisch berechnet und eingefügt.
 #let startDate = datetime(day: 1, month: 1, year: 2024) // Start der Arbeit
@@ -42,3 +43,5 @@ Metadaten können in der Datei `metadata.typ` eingetragen werden. Dort sind bere
 #let dhbw_stuttgart = [Duale Hochschule BadenW#sym.hyph.nobreak;ürttemberg Stuttgart]
 ```
  
+
+Die Datei kann unter ![](document.pdf) gesehen werden.

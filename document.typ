@@ -15,6 +15,7 @@
   submissionDate: submissionDate,
   dualer_partner: dualer_partner,
   dhbw_supervisor: dhbw_supervisor,
+  firmen_logo_path: firmen_logo,
 )
 #pagebreak()
 
@@ -42,3 +43,5 @@
 = Fazit
 == Ergebnisse
 == Zukünftige Entwicklungen
+#pagebreak()
+#bibliography("thesis.bib", full: true, title: "Quellen")
