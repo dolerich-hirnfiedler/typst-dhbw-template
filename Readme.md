@@ -44,4 +44,4 @@ Metadaten können in der Datei `metadata.typ` eingetragen werden. Dort sind bere
 ```
  
 
-Die Datei kann unter ![](document.pdf) gesehen werden.
+Die Datei kann [hier](document.pdf) gesehen werden.
